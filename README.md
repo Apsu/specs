@@ -1,4 +1,10 @@
 specs
-=====
+===
 
-Simple tool using pyrax to inspect Rackspace Cloud Servers instances.
+Simple tool to inspect Rackspace Cloud Servers instance usage.
+
+Requirements
+---
+
+- pyrax
+- dateutil
