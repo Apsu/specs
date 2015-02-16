@@ -5,9 +5,14 @@ from dateutil import parser
 
 import datetime
 import pyrax
+import sys
 
 # Set some useful things
-diff = datetime.timedelta(weeks=2)
+try:
+    days = int(sys.argv[1]) if int(sys.argv[1]) >= 0 else 14
+except:
+    days = 14
+diff = datetime.timedelta(days)
 now = datetime.datetime.utcnow()
 servers = {}
 usage = {}
